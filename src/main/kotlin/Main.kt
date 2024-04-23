@@ -7,8 +7,6 @@ fun main() {
 
     println(findMaxElement(intArrayOf(17, 13, 42, 27, 3)))
 
-    println(findMaxElement(intArrayOf(17, 13, 42, 27, 3)))
-
     println(fibonacci(7))
 
     println(isPalindrome("Madam"))
