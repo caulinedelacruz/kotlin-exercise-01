@@ -47,14 +47,14 @@ fun findMaxElement(array: IntArray): Int? {
     return array.maxOrNull()
 }
 
-fun fibonacci(number: Int): List<Int> {
+fun fibonacci(number: Int): Int {
     val fibonacciSequence = mutableListOf(0, 1)
 
-    while (fibonacciSequence.size < number) {
+    while (fibonacciSequence.size <= number) {
         fibonacciSequence.add(fibonacciSequence[fibonacciSequence.size - 1] + fibonacciSequence[fibonacciSequence.size - 2])
     }
 
-    return fibonacciSequence
+    return fibonacciSequence.last()
 }
 
 fun isPalindrome(string: String): Boolean {
@@ -69,6 +69,7 @@ fun sumOfDigits(number: Int): Int {
         sum += num % 10
         num /= 10
     }
+
     return sum
 }
 
@@ -80,6 +81,7 @@ fun findGcd(a: Int, b: Int): Int {
         y = x % y
         x = temp
     }
+
     return x
 }
 
